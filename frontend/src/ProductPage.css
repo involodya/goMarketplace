@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico&family=Plus+Jakarta+Sans&display=swap');
+
+.product {
+    background-color: #dee5ed;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px #00000040;
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+.image-container {
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8%;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+}
+
+.product-name {
+    color: #486283;
+    font-family: "Quantico", Helvetica, monospace;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.product-description {
+    color: #1a202c;
+    font-family: "Plus Jakarta Sans", Helvetica, serif;
+    font-size: 20px;
+    font-weight: 700;
+    width: 30vw;
+    margin-top: 20px;
+}
+
+.product-price {
+    color: #1a202c;
+    font-family: "Plus Jakarta Sans", Helvetica, serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.product-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.product-count button {
+    background-color: #486283;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.product-count span {
+    font-size: 20px;
+}

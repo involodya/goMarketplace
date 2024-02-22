@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico&family=Plus+Jakarta+Sans&display=swap');
+
+
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.auth-container {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+}
+
+.auth-title {
+    color: #486283;
+    font-family: "Quantico", Helvetica, sans-serif;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.auth-input {
+    width: 360px;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    font-size: 26px;
+    font-family: "Quantico", Helvetica, sans-serif;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.auth-button {
+    background-color: #486283;
+    color: #ffffff;
+    font-family: "Quantico", Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.login-button {
+    background-color: #d9d9d9;
+    color: #000000;
+}
+
+.login-error {
+    background-color: red;
+}
+
+.register-error {
+    background-color: red;
+}

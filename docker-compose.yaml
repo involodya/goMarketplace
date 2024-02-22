@@ -1,0 +1,50 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: ./backend/
+    ports:
+      - "127.0.0.1:8081:8000"
+    volumes:
+      - ./log:/log
+      - ./backend/main.db:/main.db
+    environment:
+      - AUTH_SIGNING_KEY=usafsgiuousdigcuhfm
+      - DB_URI=main.db
+    restart: unless-stopped
+
+  swaggerui:
+    build:
+      context: ./swagger/
+    environment:
+      - API_URL=models/openapi.yaml
+    ports:
+      - "127.0.0.1:8082:8080"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend/
+    ports:
+      - "127.0.0.1:3001:3000"
+    volumes:
+      - ./frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:
+      - backend
+    environment:
+#      - REACT_APP_API_URL=http://158.160.117.148/api
+      - REACT_APP_API_URL=http://localhost/api
+    restart: unless-stopped
+
+  nginx:
+    build:
+      context: ./nginx/
+    volumes:
+      - ./log:/log
+    ports:
+      - "80:80"
+    restart: unless-stopped

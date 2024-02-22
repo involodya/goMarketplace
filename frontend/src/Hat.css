@@ -1,0 +1,66 @@
+.hat {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+    box-sizing: border-box;
+}
+
+.hat .nav-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hat .nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hat .nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hat .site-name,
+.hat .cabinet-name {
+    color: #486283;
+    font-family: "Quantico", Helvetica, monospace;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hat .rectangle-button {
+    position: relative;
+    width: 200px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.hat .rectangle-button:last-child {
+    margin-right: 0;
+}
+
+.hat .rectangle {
+    background-color: #486283;
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hat .button {
+    color: #ffffff;
+    font-family: "Inter", Helvetica, serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+with-expecter: True
+outpkg: "{{.PackageName}}"
+dir: "mocks/"
+packages:
+  fullstack/backend/internal/entity:
+    interfaces:
+      UserRepository:
+      ItemRepository:
+      OrderRepository:
+      UserService:
+      ItemService:
+      OrderService:
+      AuthManager:
+#      OAuthManager:
